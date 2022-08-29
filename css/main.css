@@ -1,0 +1,58 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Rubik", sans-serif;
+  font-family: "The Nautigal", cursive;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* banner section===================================================================== */
+.banner-sec {
+  display: flex;
+  background-color: #161616;
+  padding: 0 60px;
+  padding-top: 40px;
+  border-radius: 25px;
+  margin: 60px 0px;
+}
+.banner-left {
+  width: 50%;
+}
+.banner-left h1 {
+  font-size: 70px;
+  color: #ffff;
+}
+.banner-left p {
+  font-size: 16px;
+  color: #ffff;
+  line-height: 20px;
+}
+.banner-right {
+  width: 50%;
+}
+.banner-right img {
+  width: 100%;
+}
+.banner-btn {
+  background-color: #dd0000;
+  padding: 15px 60px;
+  border-radius: 5px;
+}
+.banner-btn a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.banner-btn span {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 10px;
+}
