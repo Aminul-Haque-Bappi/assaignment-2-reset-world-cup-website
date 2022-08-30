@@ -21,9 +21,11 @@ body {
   padding-top: 40px;
   border-radius: 25px;
   margin: 60px 0px;
+  z-index: 10;
 }
 .banner-left {
   width: 50%;
+  z-index: 1;
 }
 .banner-left h1 {
   font-size: 70px;
@@ -134,6 +136,7 @@ body {
   margin: 60px 0px;
   display: none;
 }
+
 /* footer sec ================================================================================= */
 
 footer {
@@ -171,6 +174,51 @@ footer hr {
 .social-icon-sec i {
   font-size: 60px;
   color: #737373;
+}
+
+/* animation */
+.banner-left h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.banner-left h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.banner-left h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgba(252, 75, 31, 0.774);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.banner-left h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
 }
 
 /* responsive media queries for tablet========================================================= */
@@ -256,9 +304,7 @@ footer hr {
   .contact-us-sec {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* justify-content: space-evenly; */
   }
   .contact-us-sec a {
     padding: 10px 0px;
@@ -276,4 +322,17 @@ footer hr {
     display: block;
     padding: 10px 0px;
   }
+}
+
+.upcoming-match {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.upcoming-match img {
+  padding: 15px;
+}
+.upcoming-match-text {
+  text-align: center;
 }
